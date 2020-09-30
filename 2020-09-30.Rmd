@@ -1,0 +1,59 @@
+---
+title: "課堂練習模板"
+author: "Donna"
+date: "2020-09-30"
+output: output_format
+params:
+  id: "410672056"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+用指示安裝套件
+```{r}
+install.packages("googlesheets4")
+library(googlesheets4)
+library(V8)
+#選package按install
+```
+
+```{r}
+library(knitr)
+purl("2020-09-30.Rmd")
+#跑出R檔，只有語法可以直接跑
+#environment>global environment>依照借書順序紀錄(package)
+```
+
+```{r}
+#ctrl+Alt+I=insert Chunk(Tools>Modify)
+```
+
+```{r}
+a <- 2
+a = 2 # = 與 <-同義
+```
+
+```{r}
+3 -> b
+.Last.value #呈現最後執行的數值
+```
+
+```{r}
+my_108_total_credits <- 15
+_108_total_credits <- 15
+108_total_credits <- 15
+_my_108_total_credits <- 15
+my.108.total_credits <- 15
+.108.total_credits <- 15 # 隱藏變數
+.my.108.total_credits <- 15
+我的108學年總學分數 <- 15
+`我的108學年總學分數` <- 15 # 特殊名稱處理，`不是名稱的一部份
+`.108.total_credits` <- 15
+#中文字前+反頓點`>殊名稱處理，`不是名稱的一部份
+#一行指令前+.>會匿名,指令不出現在Values
+
+```
+
