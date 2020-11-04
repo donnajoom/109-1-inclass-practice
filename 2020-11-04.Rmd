@@ -1,0 +1,48 @@
+---
+title: "課堂練習模版"
+author: "Donna"
+date: "2020-11-04"
+output: output_format
+params:
+  id: "410672056"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+
+```{r}
+gender = "女"
+school = "國立臺北大學"
+title = "問 泰昇補習班打工"
+content = "有在版上看過很多北大附近補習班打工不推的\n不過好像還沒看到泰昇這間的評價\n請問大家還可以嗎？"
+cat(content)
+tags = ""
+timestamp = ""
+```
+```{r}
+photos
+"https://www.dcard.tw/f/male.jpg"
+"https://www.dcard.tw/f/female.jpg"
+```
+
+```{r}
+Biden_vote <- list(
+time = ymd_hm("2020-11-03 14:40 "),
+vote = integer("224")
+)
+as.numeric(Biden_vote)
+```
+
+```{r}
+#美國大選_選舉人票
+America_Vote <- list(
+  time = ymd_hm("2020-11-04 14:46"),ymd_hm("2020-11-04 15:00")),
+  Trump = c("213","215"),
+  Biden =cc("224","230")
+  takesall = "270"
+)
+```
+
